@@ -8,11 +8,160 @@
     */
 
     //ENTRADA
-
+    let primeiroNumero = Number(prompt('Insira um numero:').trim());
+    let segundoNumero = Number(prompt('Insira outro numero:').trim());
+    let operacao = prompt('Insira qual operação deseja usar ( "+""soma, "-" subtração, "*" multiplicação, "/" divisão )').trim();
+    let resultado = 0;
+    let mensagemFinal = `O resultado da operação será `;
 
     //PROCESSAMENTO
+    switch (operacao) {
+        case "+":
+            resultado = primeiroNumero + segundoNumero;
+            mensagemFinal += `${resultado}.`;
+            switch (resultado % 2) {
+                case 0:
+                    mensagemFinal += ` O número é par, `;
 
-    
+                    break;
+
+                default:
+                    mensagemFinal += ` O número é ímpar, `;
+                    break;
+            }
+            switch (resultado) {
+                case resultado >= 0:
+                    mensagemFinal += `positivo, `;
+
+                    break;
+
+                default:
+                    mensagemFinal += `negativo, `;
+                    break;
+            }
+            switch (Number.isInteger(resultado)) {
+                case true:
+                    mensagemFinal += `e inteiro. `;
+                    break;
+
+                default:
+                    mensagemFinal += `e decimal. `;
+                    break;
+            }
+            alert(mensagemFinal);
+            break;
+
+        case "-":
+            resultado = primeiroNumero - segundoNumero;
+            mensagemFinal += `${resultado}.`;
+            switch (resultado % 2) {
+                case 0:
+                    mensagemFinal += ` O número é par, `;
+
+                    break;
+
+                default:
+                    mensagemFinal += ` O número é ímpar, `;
+                    break;
+            }
+            switch (resultado) {
+                case resultado >= 0:
+                    mensagemFinal += `positivo, `;
+
+                    break;
+
+                default:
+                    mensagemFinal += `negativo, `;
+                    break;
+            }
+            switch (Number.isInteger(resultado)) {
+                case true:
+                    mensagemFinal += `e inteiro. `;
+                    break;
+
+                default:
+                    mensagemFinal += `e decimal. `;
+                    break;
+            }
+            alert(mensagemFinal);
+            break;
+
+        case "*":
+            resultado = segundoNumero * primeiroNumero;
+            mensagemFinal += `${resultado}.`;
+            switch (resultado % 2) {
+                case 0:
+                    mensagemFinal += ` O número é par, `;
+
+                    break;
+
+                default:
+                    mensagemFinal += ` O número é ímpar, `;
+                    break;
+            }
+            switch (resultado) {
+                case resultado >= 0:
+                    mensagemFinal += `positivo, `;
+
+                    break;
+
+                default:
+                    mensagemFinal += `negativo, `;
+                    break;
+            }
+            switch (Number.isInteger(resultado)) {
+                case true:
+                    mensagemFinal += `e inteiro. `;
+                    break;
+
+                default:
+                    mensagemFinal += `e decimal. `;
+                    break;
+            }
+            alert(mensagemFinal);
+            break;
+
+        case "/":
+            resultado = primeiroNumero / segundoNumero;
+            mensagemFinal += `${resultado}.`;
+            switch (resultado % 2) {
+                case 0:
+                    mensagemFinal += ` O número é par, `;
+
+                    break;
+
+                default:
+                    mensagemFinal += ` O número é ímpar, `;
+                    break;
+            }
+            switch (resultado) {
+                case resultado >= 0:
+                    mensagemFinal += `positivo, `;
+
+                    break;
+
+                default:
+                    mensagemFinal += `negativo, `;
+                    break;
+            }
+            switch (Number.isInteger(resultado)) {
+                case true:
+                    mensagemFinal += `e inteiro. `;
+                    break;
+
+                default:
+                    mensagemFinal += `e decimal. `;
+                    break;
+            }
+            alert(mensagemFinal);
+            break;
+
+        default:
+            alert('Operação Inválida! Use apenas os simbolos indicados.');
+
+            break;
+    }
+
     //SAÍDA
 
 </script>

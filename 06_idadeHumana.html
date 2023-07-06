@@ -8,11 +8,32 @@
     // - cães grandes: fator 7.
 
     // ENTRADA
-
-    
+    const nomeCao = prompt('Qual o nome do seu cãozinho?').trim();
+    const idadeCanina = Number(prompt(`Quantos anos ${nomeCao} tem?`).trim());
+    const porte = prompt(`Qual é o porte do(a) ${nomeCao}? (P-pequeno, M-médio, G-grande)`).trim().toUpperCase();
+    let idadeHumana = 0;
     // PROCESSAMENTO
+    switch (porte) {
+        case "P":
+            idadeHumana = idadeCanina * 5;
+            alert(`${nomeCao} tem ${idadeHumana} anos na idade humana.`);
+            break;
 
-    
+        case "M":
+            idadeHumana = idadeCanina * 6;
+            alert(`${nomeCao} tem ${idadeHumana} anos na idade humana.`);
+            break;
+
+        case "G":
+            idadeHumana = idadeCanina * 7;
+            alert(`${nomeCao} tem ${idadeHumana} anos na idade humana.`);
+            break;
+
+        default:
+            alert('Porte Inválido! Use apenas as siglas indicadas.');
+            break;
+    }
+
     // SAÍDA
 
-    </script>
+</script>

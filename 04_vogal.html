@@ -3,10 +3,22 @@
     //PROBLEMA: Vogal - Construa um programa que leia um caractere e informe se este caractere é uma vogal.
 
     // ENTRADA
-
+    let caractere = prompt('Insira uma letra:')
     
     // PROCESSAMENTO
-
+    switch (caractere) {
+        case "a":
+        case "e":
+        case "i":
+        case "o":
+        case "u":
+            alert('A letra que você inseriu é uma vogal.')
+            break;
+    
+        default:
+            alert('A letra que você inseriu é uma consoante.')
+            break;
+    }
     
     // SAÍDA
 
