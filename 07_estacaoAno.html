@@ -6,11 +6,99 @@
     */
 
     //ENTRADA
-    const hemisferio = prompt(`Informe o seu hemisfério. (Responda com S para sul e N para norte)`).trim().toLowerCase();
-    const mes = Number(prompt(`Informe o mês atual. (Responda com números (ex: janeiro = 1)`).trim());
+    const hemisferio = prompt('Informe em qual hemisfério você está: (S-Sul ou N-Norte)').toLowerCase().trim();
+    const mes = prompt('Informe o mês atual:').toLowerCase().trim();
+
     //PROCESSAMENTO
+    switch (hemisferio) {
+        case "n":
+            switch (mes) {
+                case "janeiro":
+                    alert('Estamos no inverno, prepare seus casacos!');
+                    break;
+                case "fevereiro":
+                    alert("Estamos no inverno, prepare seus casacos!");
+                    break;
+                case "março":
+                    alert('Estamos no inverno, prepare seus casacos!');
+                    break;
+                case "abril":
+                    alert('Estamos na primavera, não esqueça de apreciar a paisagem!');
+                    break;
+                case "maio":
+                    alert('Estamos na primavera, não esqueça de apreciar a paisagem!');
+                    break;
+                case "junho":
+                    alert('Estamos na primavera, não esqueça de apreciar a paisagem!');
+                    break;
+                case "julho":
+                    alert('Estamos no verão, aproveite o solzão e pegue uma prainha.');
+                    break;
+                case "agosto":
+                    alert('Estamos no verão, aproveite o solzão e pegue uma prainha.');
+                    break;
+                case "setembro":
+                    alert('Estamos no verão, aproveite o solzão e pegue uma prainha.');
+                    break;
+                case "outubro":
+                    alert('Estamos no outono, as folhas já não são as mesmas...');
+                    break;
+                case "novembro":
+                    alert('Estamos no outono, as folhas já não são as mesmas...');
+                    break;
+                case "dezembro":
+                    alert('Estamos no outono, as folhas já não são as mesmas...');
+                    break;
+                default:
+                    alert('Valor Inválido!');
+                    break;
 
+            }
+    }
+    switch (hemisferio) {
+        case "s":
+            switch (mes) {
+                case "janeiro":
+                    alert('Estamos no verão, aproveite o solzão e pegue uma prainha.');
+                    break;
+                case "fevereiro":
+                    alert("Estamos no verão, aproveite o solzão e pegue uma prainha.");
+                    break;
+                case "março":
+                    alert('Estamos no verão, aproveite o solzão e pegue uma prainha.');
+                    break;
+                case "abril":
+                    alert('Estamos no outono, as folhas já não são as mesmas...');
+                    break;
+                case "maio":
+                    alert('Estamos no outono, as folhas já não são as mesmas...');
+                    break;
+                case "junho":
+                    alert('Estamos no outono, as folhas já não são as mesmas...');
+                    break;
+                case "julho":
+                    alert('Estamos no inverno, prepare seus casacos!');
+                    break;
+                case "agosto":
+                    alert('Estamos no inverno, prepare seus casacos!');
+                    break;
+                case "setembro":
+                    alert('Estamos no inverno, prepare seus casacos!');
+                    break;
+                case "outubro":
+                    alert('Estamos na primavera, não esqueça de apreciar a paisagem!');
+                    break;
+                case "novembro":
+                    alert('Estamos na primavera, não esqueça de apreciar a paisagem!');
+                    break;
+                case "dezembro":
+                    alert('Estamos na primavera, não esqueça de apreciar a paisagem!');
+                    break;
+                default:
+                    alert('Valor Inválido!');
+                    break;
 
+            }
+    }
     //SAÍDA
-
 </script>
